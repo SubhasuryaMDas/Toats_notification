@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toast Notifications</title>
+  <link rel="stylesheet" href="./styele.css">
+</head>
+<body>
+  <h1 style="text-align: center;">Toast Notifications</h1>
+  <div class="container">
+    <label for="horizontal-position">Horizontal Position:</label>
+    <select id="horizontal-position">
+      <option value="left">Left</option>
+      <option value="right">Right</option>
+    </select>
+
+    <label for="vertical-position">Vertical Position:</label>
+    <select id="vertical-position">
+      <option value="top">Top</option>
+      <option value="bottom">Bottom</option>
+    </select>
+
+    <label for="toast-type">Toast Type:</label>
+    <select id="toast-type">
+      <option value="success">Success</option>
+      <option value="error">Error</option>
+      <option value="warning">Warning</option>
+      <option value="info">Info</option>
+    </select>
+
+    <label for="toast-message">Message:</label>
+    <input id="toast-message" type="text" placeholder="Enter your message">
+
+    <label for="duration">Duration (seconds):</label>
+    <input id="duration" type="range" min="2" max="10" value="4">
+    <span id="duration-output">4</span>
+
+    <button class="show-toast" disabled>Show Toast</button>
+  </div>
+
+  <!-- Toast Containers -->
+  <div class="toast-container tc-left-top"></div>
+  <div class="toast-container tc-left-bottom"></div>
+  <div class="toast-container tc-right-top"></div>
+  <div class="toast-container tc-right-bottom"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
